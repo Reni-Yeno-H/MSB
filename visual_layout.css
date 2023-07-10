@@ -32,7 +32,7 @@
     transition: 0.4s;
 
     width: 270px; /*Adjust when neccesary*/
-    height: 52px;
+    height: 45px;
     flex-grow: 0;
     object-fit: contain;
     font-family: Inter;
@@ -91,6 +91,7 @@
   .dropdown {
     position: relative;
     display: inline-block;
+    margin-right: 20px; /* Spacing between links, adjust as needed */
   }
 
   #navbar .dropdown-content .list {
@@ -130,9 +131,9 @@
     color: white;
   }*/
   
-  /* Display some links to the right */
+  /* Display spacing below the logo */
   #navbar-center {
-    float: none;
+    margin-top: 20px; /*Adjust as needed*/
   }
   
   /* Add responsiveness - on screens less than 580px wide, display the navbar vertically instead of horizontally */
