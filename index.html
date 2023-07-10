@@ -18,14 +18,25 @@
         <link href="visual_layout.css" type="text/css" rel="stylesheet">
         <script src="functions.js" async></script>
 
+        <div class="container">
         <nav id="navbar">
             <a href="index.html" id="logo">CompanyLogo</a>
-            <div id="navbar-center">
-              <a class="active" href="about.html" id="about">about us</a>
-              <a href="apply.html">apply</a>
-              <a href="contact">contact us</a>
-            </div>
+            <nav id="navbar-center">
+                <div class="dropdown">
+                
+                    <a href="index.html" class="dropbtn">about us</a>
+                    <div class="dropdown-content">
+                        <a href="index.html" class="list">about twg</a>
+                        <a href="contact.html" class="list">contact us</a>
+                    </div>
+
+                </div>
+              <!--<a class="active" href="about.html" id="about">about us</a>-->
+              <a href="apply.html" id="apply" >apply</a>
+              <!--<a href="contact.html">contact us</a>-->
+            </nav>
         </nav>
+        </div>
 
           <!--<nav id="navbar">
             <h1 href="index.html" id="logo">CompanyLogo</h1>
