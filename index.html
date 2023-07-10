@@ -11,24 +11,40 @@
     Filename: home.html
     -->         
     <head>   
-        <title> The Wings Group </title>
-        
 
         <meta charset="utf-8"/>
         <meta name="keywords" content="hiring"/>
         
         <link href="visual_layout.css" type="text/css" rel="stylesheet">
-        <script src="user_system.js" async></script>
+        <script src="functions.js" async></script>
+
+        <nav id="navbar">
+            <h1 href="index.html" id="logo">CompanyLogo</h1>
+            <div id="navbar-center">
+              <a class="active" href="about.html" id="about">about us</a>
+              <a href="apply.html">apply</a>
+              <a href="contact">contact us</a>
+            </div>
+        </nav>
+
+          <!--<nav id="navbar">
+            <h1 href="index.html" id="logo">CompanyLogo</h1>
+            <ul id="navbar-center">
+                <li> <a class="about" href="about.html">about us </a></li>
+                <li> <a class="apply" href="apply.html">apply</a></li>
+                <li> <a class="contact" href="contact">contact us</a></li>
+                <li> <a class="job_seekers" href="job_seekers.html">Job Seekers </a></li>
+                <li> <a class="employers" href="employers.html">Employers </a></li>
+                <li> <a class="job_board" href="job_board.html">Job Board </a></li>
+                <li> <a class="review" href="review.html">Review </a></li>
+                <li> <a class="gallery" href="gallery.html">Gallery </a></li>
+            </ul>
+        </nav> -->
 
 
-        <!-- <form id="memberForm" method="post">
-            <label for="username">Username</label>
-            <input id="username" name="user" type="text" placeholder="Enter Username"/>
-            <label for="password">Password</label>
-            <input type="password" id="password" name="pwd" placeholder="Enter Password"/>
-            <button type="submit" value="Login" onclick="displayGreeting()">Login</button>
-         </form> -->
+        <!--<title> The Wings Group </title>-->
         
+         <!--
          <br>
          <form id="memberForm" method="post">
             <div id="loginMessage">
@@ -38,17 +54,17 @@
                 <input type="password" id="password" placeholder="Enter Password">
                 <button type="submit" onclick="displayGreeting()" >Login</button>
                 <button id="reset" type="submit" action="#" >Reset</button>
-                <!-- <button id="logout" type="submit" action="#" >Logout</button> -->
+            
             </div>
          <hr>
-         <!-- <div id="loginMessage"></div> -->
-         <!-- <div id="loginSystem"></div> -->
-        </form>
+
+        </form> -->
 
     </head>
     
     <body> 
         
+          
         <p> Welcome to <em>The Wings Group </em></p>
 
         <header> 
@@ -56,17 +72,6 @@
             
             <a href="index.html"> <img src="IconImages/header_logo.png" alt="The Wings Group"/> </a>
             
-            <nav>
-                <ul>
-                    <li> <a class="home" href="index.html">Home </a></li>
-                    <li> <a class="job_seekers" href="job_seekers.html">Job Seekers </a></li>
-                    <li> <a class="employers" href="employers.html">Employers </a></li>
-                    <li> <a class="job_board" href="job_board.html">Job Board </a></li>
-                    <li> <a class="review" href="review.html">Review </a></li>
-                    <li> <a class="gallery" href="gallery.html">Gallery </a></li>
-                    <li> <a class="about_us" href="about_us.html">About Us </a></li>
-                </ul>
-            </nav>
         </header>
 
         <article id="about_us"> 
@@ -101,6 +106,13 @@
             11 a.m. to 7 p.m. on Monday through Thursday, and 
             11 a.m. to 11 p.m. on Friday and Saturday. Taste the 
             difference if you have exquisite taste! If you need food, 
+            Do be warned that you might not be able control your addictions
+            after your first taste. Although there are no samples at this time,
+            you can head over at Reni's Bakery throughout Genbury West Street from
+            11 a.m. to 7 p.m. on Monday through Thursday, and 
+            11 a.m. to 11 p.m. on Friday and Saturday. Taste the 
+            difference if you have exquisite taste! If you need food,
+
             <em>Reni Yeno will deliver by drone from the skies or land. </em> </p>
             
             <p> Contact us at <strong>reniyeno@gmail.com</strong> or order your selected bakery foods remotely
