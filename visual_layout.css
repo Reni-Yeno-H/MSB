@@ -65,14 +65,14 @@
   h1 {
     padding: 20px;
     padding-bottom: 0px;
-    font-family: Savoye LET;
+    font-family: 'Savoye LET Plain';
     font-size: 61px;
     opacity: 0.3;
     background-color: #1f1fb3;
     color: #b4fffe;
+    src: url('Fonts/SavoyeLET.ttf') format('truetype');
   }
 
-  
 
   body {
 
