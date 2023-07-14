@@ -12,6 +12,7 @@
 
 /* Create a sticky/fixed navbar */
 #navbar {
+    opacity: 0.9;
     height: 70px;
     background-color: #ebe8e5;
     padding: 90px 10px; /* Large padding which will shrink on scroll (using JS) */
@@ -60,6 +61,28 @@
     letter-spacing: 1px;
     text-transform: uppercase;
   }
+
+  h1 {
+    padding: 20px;
+    padding-bottom: 0px;
+    font-family: Savoye LET;
+    font-size: 61px;
+    opacity: 0.3;
+    background-color: #1f1fb3;
+    color: #b4fffe;
+  }
+
+  
+
+  body {
+
+  }
+
+  footer {
+    bottom: 100%;
+    width: 100%;
+    background-color:bisque;
+  }
   
   /* Links on mouse-over */
   #navbar #logo:hover {
@@ -72,7 +95,7 @@
     color: black;
   }
 
-  .dropbtn {
+  /*.dropbtn {
     font-weight: 100;
     position: relative;
     color: black;
@@ -91,11 +114,11 @@
   .dropdown {
     position: relative;
     display: inline-block;
-    margin-right: 20px; /* Spacing between links, adjust as needed */
+    margin-right: 20px;  Spacing between links, adjust as needed 
   }
 
   #navbar .dropdown-content .list {
-    white-space: nowrap; /*Allows content in one line*/
+    white-space: nowrap; Allows content in one line
     color: white;
     
   }
@@ -123,7 +146,7 @@
 
 .dropdown:hover .dropdown-content {
     display: block;
-}
+}*/
   
   /* Style the active/current link 
   #navbar b.active {
