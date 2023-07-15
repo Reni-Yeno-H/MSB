@@ -44,6 +44,7 @@ window.addEventListener('scroll', function() {
     navbarCenter.style.display = "none";
     var scale = 0.4;
     image.style.transform = 'scale(' + scale + ')';
+    image.style.position = "relative";
     image.style.top = "20px";
 
   } else {
@@ -52,6 +53,8 @@ window.addEventListener('scroll', function() {
     navbarCenter.style.display = "block";
     var scale = 1;
     image.style.transform = 'scale(' + scale + ')';
+    image.style.position = "relative";
+    image.style.top = "0px";
   }
 });
 
