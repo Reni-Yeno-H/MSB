@@ -15,37 +15,50 @@
     opacity: 0.9;
     height: 70px;
     background-color: #ebe8e5;
-    padding: 90px 10px; /* Large padding which will shrink on scroll (using JS) */
-    transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+    padding: 103px 10px; /* Large padding which will shrink on scroll (using JS) */
+    transition: padding 0.125s ease; /* Adds a transition effect when the padding is decreased */
     position: fixed; /* Sticky/fixed navbar */
     width: 100%;
     top: 0; /* At the top */
     left: 0;
-    z-index: 0;
+    z-index: 99;
     text-align: center;
     justify-content: center;
     align-items: center;
   }
 
-  /* Style the logo */
-  #navbar #logo {
-    font-size: 35px;
-    transition: 0.4s;
-
-    width: 270px; /*Adjust when neccesary*/
-    height: 45px;
-    flex-grow: 0;
-    object-fit: contain;
-    font-family: Inter;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: left;
-    color: #000;
+  /*
+  .shapeshift {
+    height: 100%;
   }
-  
+
+
+  #navbar {
+    padding: 30px 10px;
+  } */
+
+  /* Style the logo 
+
+  img {
+    transition: 0.4s;
+  }
+  */
+
+  .container {
+    height: 150px; /* Set the initial height of the container */
+    width: 150px;
+    overflow: hidden; /* Hide the overflow when the image size changes */
+    position: absolute;
+    top: -50px;
+    
+  }
+
+
+  #logo {
+    width: 150px; /* Set the initial width of the image of the hover */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+  }
+
   /* Style the navbar links */
   #navbar a {
     font-weight: 100;
@@ -60,6 +73,7 @@
     display: inline-block;
     letter-spacing: 1px;
     text-transform: uppercase;
+    transition: all 0.5s ease-out;
   }
 
   h1 {
@@ -86,12 +100,13 @@
   
   /* Links on mouse-over */
   #navbar #logo:hover {
-    background-color: #ddd;
+    background-color: #1f1fb3;
     color: black;
   }
 
-  #navbar a:hover {
-    background-color: #ddd;
+  #navbar a:hover, a:focus{
+    background-color: #ddfffe;
+    opacity: 0.8;
     color: black;
   }
 
@@ -156,7 +171,7 @@
   
   /* Display spacing below the logo */
   #navbar-center {
-    margin-top: 20px; /*Adjust as needed*/
+    margin-top: 95px; /*Adjust as needed*/
   }
   
   /* Add responsiveness - on screens less than 580px wide, display the navbar vertically instead of horizontally */
