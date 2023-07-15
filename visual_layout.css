@@ -61,7 +61,7 @@
 
   /* Style the navbar links */
   #navbar a {
-    font-weight: 100;
+    font-weight: bold;
     position: relative;
     color: black;
     text-align: center;
