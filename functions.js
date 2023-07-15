@@ -23,16 +23,92 @@ window.addEventListener('scroll', function() {
   image.style.transform = 'scale(' + scale + ')';
 }); */
 
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function(event) {
+  var image = document.getElementById('logo');
+  var scrollPos = window.scrollY;
+
+  // Handle navbar scroll behavior
+  var navbar = document.getElementById('navbar');
+  var navbarCenter = document.getElementById('navbar-center');
+
+  if (scrollPos > 80) {
+    // When user scrolls down:
+    navbar.style.padding = "0px 10px";
+    navbarCenter.style.display = "none";
+    var scale = 0.4;
+    image.style.transform = 'scale(' + scale + ')';
+    image.style.position = "relative";
+    image.style.top = "20px";
+
+    // Add if statement for navbar hover
+    navbar.addEventListener('mouseover', function(event) {
+      var rect = navbar.getBoundingClientRect();
+      var y = event.clientY - rect.top;
+      if (y.toFixed() == '0') {
+        navbar.style.padding = "103px 10px";
+      }
+    });
+
+    navbar.addEventListener('mouseover', function(event) {
+      navbar.style.padding = "103px 10px";
+      navbarCenter.style.display = "block";
+      var scale = 1;
+      image.style.transform = 'scale(' + scale + ')';
+      image.style.position = "relative";
+      image.style.top = "0px";
+      //if (scrollPos <= 80) {
+      //  navbar.style.padding = "103px 10px";
+      //  navbarCenter.style.display = "block";
+      //  var scale = 1;
+      //  image.style.transform = 'scale(' + scale + ')';
+      //  image.style.position = "relative";
+      //  image.style.top = "0px";
+      //} else {
+      //  navbar.style.padding = "0px 10px";
+      //}
+    });
+
+    var rect = navbar.getBoundingClientRect();
+    var y = event.clientY - rect.top;
+    if (y.toFixed() !== '0') {
+      
+    
+    navbar.addEventListener('mouseout', function(event) {
+      navbar.style.padding = "0px 10px";
+      navbarCenter.style.display = "none";
+      var scale = 0.4;
+      image.style.transform = 'scale(' + scale + ')';
+      image.style.position = "relative";
+      image.style.top = "20px";
+    })
+    };
+
+  } else {
+    // When user scrolls up:
+    navbar.style.padding = "103px 10px";
+    navbarCenter.style.display = "block";
+    var scale = 1;
+    image.style.transform = 'scale(' + scale + ')';
+    image.style.position = "relative";
+    image.style.top = "0px";
+
+    // Remove the navbar hover behavior when scrolling up
+    navbar.removeEventListener('mouseover', function() {});
+    navbar.removeEventListener('mouseout', function() {});
+  }
+});
+
+
+/*window.addEventListener('scroll', function() {
   //var headHeight = document.querySelector('.shapeshift').offsetHeight;
   var image = document.getElementById('logo');
   var scrollPos = window.scrollY;
-  /*
+  
   // Calculate the scale based on the scroll position and header height
-  var scale = 1 - (scrollPos - headHeight) / scrollPos;
+  //var scale = 1 - (scrollPos - headHeight) / scrollPos;
 
   // Apply the scale to the image
-  image.style.transform = 'scale(' + scale + ')'; */
+  //image.style.transform = 'scale(' + scale + ')';
 
   // Handle navbar scroll behavior
   var navbar = document.getElementById('navbar');
@@ -56,7 +132,7 @@ window.addEventListener('scroll', function() {
     image.style.position = "relative";
     image.style.top = "0px";
   }
-});
+});*/
 
 
 /*
