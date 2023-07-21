@@ -12,10 +12,13 @@
 
 /* Create a sticky/fixed navbar */
 #navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     opacity: 0.9;
     height: 70px;
     background-color: #ebe8e5;
-    padding: 103px 10px; /* Large padding which will shrink on scroll (using JS) */
+    padding: 70px 10px; /* Originally 103px 10px Large padding which will shrink on scroll (using JS) */
     transition: padding 0.125s ease; /* Adds a transition effect when the padding is decreased */
     position: fixed; /* Sticky/fixed navbar */
     width: 100%;
@@ -23,8 +26,6 @@
     left: 0;
     z-index: 99;
     text-align: center;
-    justify-content: center;
-    align-items: center;
   }
 
   /*
@@ -57,6 +58,10 @@
   #logo {
     width: 150px; /* Set the initial width of the image of the hover */
     transition: transform 0.3s ease; /* Add a smooth transition effect */
+    justify-content: flex-start;
+    position: absolute;
+    left: 10px;
+    top: -5px;
   }
 
   /* Style the navbar links */
@@ -104,11 +109,12 @@
   
   /* Links on mouse-over */
   #navbar #logo:hover {
-    background-color: #1f1fb3;
+    /*background-color: #1f1fb3;
     color: black;
+    right: 200%;*/
   }
 
-  #navbar a:hover, a:focus{
+  #navbar .link:hover, .link:focus{
     background-color: #ddfffe;
     opacity: 0.8;
     color: black;
@@ -173,9 +179,9 @@
     color: white;
   }*/
   
-  /* Display spacing below the logo */
+  /* Display spacing below the logo for the links within the navbar */
   #navbar-center {
-    margin-top: 95px; /*Adjust as needed*/
+    margin-top: 0px; /*Adjust as needed*/
   }
   
   /* Add responsiveness - on screens less than 580px wide, display the navbar vertically instead of horizontally */
@@ -185,6 +191,13 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+    }
+
+    #logo {
+      width: 150px; /* Set the initial width of the image of the hover */
+      transition: transform 0.3s ease; /* Add a smooth transition effect */
+      margin-top: 10px;
+      left: 10px;
     }
 
     #navbar #navbar-center {
