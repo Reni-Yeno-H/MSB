@@ -34,28 +34,35 @@ window.addEventListener('scroll', function(event) {
   if (scrollPos > 80) {
     // When user scrolls down:
     navbar.style.padding = "0px 10px";
-    navbarCenter.style.display = "none";
+    navbar.style.display = "flex";
     var scale = 0.4;
     image.style.transform = 'scale(' + scale + ')';
     image.style.position = "relative";
-    image.style.top = "20px";
+    image.style.top = "-5px";
+    image.style.left = "-450px";
 
     // Add if statement for navbar hover
     navbar.addEventListener('mouseover', function(event) {
       var rect = navbar.getBoundingClientRect();
       var y = event.clientY - rect.top;
       if (y.toFixed() == '0') {
-        navbar.style.padding = "103px 10px";
+        navbar.style.display = "flex";
+        navbar.style.padding = "70px 10px";
+        image.style.transform = 'scale(' + scale + ')';
+        image.style.position = "relative";
+        image.style.top = "-5px";
+        image.style.left = "10px";
       }
     });
 
     navbar.addEventListener('mouseover', function(event) {
-      navbar.style.padding = "103px 10px";
-      navbarCenter.style.display = "block";
+      navbar.style.padding = "70px 10px";
+      navbar.style.display = "flex";
       var scale = 1;
       image.style.transform = 'scale(' + scale + ')';
       image.style.position = "relative";
-      image.style.top = "0px";
+      image.style.top = "-5px";
+      image.style.left = "10px";
       //if (scrollPos <= 80) {
       //  navbar.style.padding = "103px 10px";
       //  navbarCenter.style.display = "block";
@@ -75,22 +82,24 @@ window.addEventListener('scroll', function(event) {
     
     navbar.addEventListener('mouseout', function(event) {
       navbar.style.padding = "0px 10px";
-      navbarCenter.style.display = "none";
+      navbar.style.display = "flex";
       var scale = 0.4;
       image.style.transform = 'scale(' + scale + ')';
       image.style.position = "relative";
-      image.style.top = "20px";
+      image.style.top = "-5px";
+      image.style.left = "-450px";
     })
     };
 
   } else {
     // When user scrolls up:
-    navbar.style.padding = "103px 10px";
+    navbar.style.padding = "70px 10px";
     navbarCenter.style.display = "block";
     var scale = 1;
     image.style.transform = 'scale(' + scale + ')';
     image.style.position = "relative";
-    image.style.top = "0px";
+    image.style.top = "-5px";
+    image.style.left = "10px";
 
     // Remove the navbar hover behavior when scrolling up
     navbar.removeEventListener('mouseover', function() {});
