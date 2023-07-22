@@ -87,7 +87,7 @@ window.addEventListener('scroll', function(event) {
       image.style.transform = 'scale(' + scale + ')';
       image.style.position = "relative";
       image.style.top = "-5px";
-      image.style.left = "-450px";
+      image.style.left = "-200px";
     })
     };
 
