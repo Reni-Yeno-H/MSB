@@ -85,22 +85,501 @@
     transition: all 0.5s ease-out;
   }
 
-  h1 {
+  .diversity-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .diversity-header img {
+    width: 100%;
+    height: auto;
+  }
+
+  .diversity-header h1 {
     padding: 20px;
     padding-bottom: 0px;
-    font-family: 'Savoye LET Plain', sans-serif ;
+    font-family: /*'Savoye LET Plain',*/ sans-serif ;
     font-size: 40px;
     font-style: italic;
     opacity: 1;
     background-color: #000000;
     color: #ffffff;
+    width: 100%;
   }
 
+  /*.words-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    background-color: #f9f9f9; */
+    
+    /*background-image: url(Assets/working.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;*/
+/*}*/
 
-  body {
+/*#hyperfocused,
+#wedoit,
+#markad {
+  font-size: 36px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+  padding: 10px; 
+  border-radius: 8px; 
+  margin-bottom: 90px; 
+  
+}
 
+  #hyperfocused {
+  color: #4287f5 ; 
+  background-color: #e3f1ff ;
+}
+
+#wedoit {
+  color: #ffffff;
+  background-color: #ffcc00; 
+}
+
+
+#markad {
+  color: #009999; 
+  background-color: #FFFFCC;
+}
+
+#duration {
+  font-size: 36px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+  padding: 10px; 
+  border-radius: 8px;
+  margin-bottom: 90px; 
+
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  background-color: #460080; 
+}
+
+*/
+
+ul.words-container li {
+  font-size: 36px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 10vh; 
+  align-items: center;
+  margin-right: 50px;
+}
+
+ul#duration-type li {
+  font-size: 36px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+
+  list-style-type: none;
+}
+
+#duration-type li {
+  background-color: #ebe8e5;
+  padding: 10px;
+  margin-right: 100px;
   }
 
+#duration-type li:last-child {
+  margin-right: 0;
+}
+
+#duration-type {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  background-color: #ebe8e5;
+
+}
+
+/* Add border to the first li element */
+#duration-type li:first-child {
+  border-left: 2px solid #000; /* Adjust the border style and color as per your preference */
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  border-radius: 8px 0 0 8px; /* Adjust the border radius to control the rounded corners */
+}
+
+#duration-type li:not(:first-child):not(:last-child) {
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  border-radius: 0 0 0 0; /* Adjust the border radius to control the rounded corners */
+}
+
+/* Add border to the last li element */
+#duration-type li:last-child {
+  border-right: 2px solid #000; /* Adjust the border style and color as per your preference */
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  border-radius: 0 8px 8px 0; /* Adjust the border radius to control the rounded corners */
+}
+
+#duration-type ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.columns-container li:nth-child(even) {
+  background-color: #ebe8e5;
+}
+
+/*.words-container li:nth-child(even) {
+  background-color: #ebe8e5;
+}*/
+
+li#color-it {
+  padding: 10px;
+  justify-content: center;
+  background-color: #ebe8e5;
+}
+
+.columns-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.columns-container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.left-column,
+.middle-column,
+.right-column {
+  flex: 1; /* Equal width for all columns */
+}
+
+.left-column li,
+.middle-column li,
+.right-column li {
+  list-style-type: square;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Add styling for the list items */
+.columns-container li {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 5px;
+}
+
+#area-column {
+  font-size: 25px;
+  font-weight: bold;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#commitment {
+  display: flex;
+  align-items: center;
+}
+
+#diversity-eyes, #commitment-descriptions {
+  flex: 1;
+}
+
+#diversity-eyes {
+  margin-right: 30px;
+}
+
+#diversity-eyes img {
+  width: 70%;
+  height: auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+#commitment-descriptions {
+  margin-right: 50px;
+  font-size: 25px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Below is for whyus.html*/
+
+#why-us-container {
+  display: flex;
+  align-items: center;
+}
+
+#why-us-container h2{
+  font-size: 25px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.why-us-topic {
+  font-size: 25px;
+  font-weight: bold;
+  font-style: italic;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#impressive-rock, #why-us-descriptions {
+  flex: 1;
+}
+
+#why-us-descriptions {
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.industries {
+  margin-left: 40px;
+}
+
+.subtopics {
+  margin-left: 40px;
+}
+
+#impressive-rock img {
+  width: 100%;
+  height: auto;
+}
+
+/*Below is for employers.html*/
+
+#employers-container {
+  display: flex;
+  /*align-items: center;*/
+}
+
+#employers-container h2{
+  font-size: 25px;
+  font-weight: bold;
+  font-style: italic;
+
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#employers-container h3{
+  font-size: 25px;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+}
+
+#employers-descriptions {
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+#work-force, #employers-descriptions {
+  flex: 1;
+}
+
+#work-force img {
+  width: 100%;
+  height: auto;
+}
+
+/*Below is for jobseekers.html*/
+
+#jobseekers-container {
+  display: flex;
+  /*align-items: center;*/
+}
+
+#jobseekers-container h2{
+  font-size: 25px;
+  font-weight: bold;
+  font-style: italic;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#jobseekers-descriptions {
+  font-size: 25px;
+  font-weight: bold;
+  margin-right: 20px;
+  align-items: center;
+}
+
+#handshake, #jobseekers-descriptions {
+  flex: 1;
+}
+
+#handshake img {
+  width: 100%;
+  height: auto;
+}
+
+/*Below is for contact.html*/
+
+#contact-container {
+  display: flex;
+  /*align-items: center;*/
+}
+
+.contactTopic {
+  font-size: 25px;
+  font-weight: bold;
+  font-style: italic;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact-container h2{
+  font-size: 25px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+#contact-descriptions {
+  font-weight: bold;
+  margin-right: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+#diverse-chilling, #contact-descriptions {
+  flex: 1;
+}
+
+#diverse-chilling img {
+  width: 100%;
+  height: auto;
+}
+
+/*Below is for email send button within contact.html*/
+
+/*.prompt-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.prompt-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.prompt-box label,
+.prompt-box input {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.prompt-box input[type="text"],
+.prompt-box input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.prompt-box button {
+  margin-top: 15px;
+  padding: 8px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.prompt-box button.cancel {
+  background-color: #f44336;
+  margin-right: 10px;
+}
+
+.message-error {
+  color: red;
+  font-size: 14px;
+}*/
+
+/*Below is the follow us on social for all pages*/
+#social {
+  background-color: #ebe8e5;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa-facebook {
+  margin-left: 785px;
+  background: #3B5998;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+#facebook:hover,
+#instagram:hover,
+#linkedin:hover,
+#twitter:hover {
+  opacity: 0.7;
+}
+
+/*Footer is for all pages below*/
   footer {
     bottom: 100%;
     width: 100%;
