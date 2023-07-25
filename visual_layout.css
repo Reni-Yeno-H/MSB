@@ -538,21 +538,23 @@ li#color-it {
 }*/
 
 /*Below is the follow us on social for all pages*/
-#social {
+#social{
   background-color: #ebe8e5;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .fa {
   padding: 20px;
   font-size: 30px;
   width: 15px;
-  text-align: center;
   text-decoration: none;
   border-radius: 50%;
 }
 
 .fa-facebook {
-  margin-left: 785px;
   background: #3B5998;
   color: white;
 }
